@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riches Corp — Invest Small, Earn Big</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Favicon (Embedded SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+</head>
+<body>
+    
+    <!-- ============================================ -->
+    <!-- PREMIUM LOADER -->
+    <!-- ============================================ -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-container">
+            <!-- Animated Logo -->
+            <div class="loader-logo">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="35" stroke="url(#gradient1)" stroke-width="3" stroke-linecap="round" stroke-dasharray="220" stroke-dashoffset="220" class="loader-circle"/>
+                    <path d="M40 15C40 15 35 25 35 40C35 55 40 65 40 65M40 15C40 15 45 25 45 40C45 55 40 65 40 65M40 15V65M25 40H55" stroke="url(#gradient2)" stroke-width="2.5" stroke-linecap="round"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0" y1="0" x2="80" y2="80">
+                            <stop offset="0%" stop-color="#FFD700"/>
+                            <stop offset="100%" stop-color="#FFA500"/>
+                        </linearGradient>
+                        <linearGradient id="gradient2" x1="0" y1="0" x2="80" y2="80">
+                            <stop offset="0%" stop-color="#FFD700"/>
+                            <stop offset="100%" stop-color="#FFFFFF"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <h2 class="loader-text">RICHES CORP</h2>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-subtitle">Initializing secure connection...</p>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION (Glassmorphism) -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+                    <path d="M16 6C16 6 13 10 13 16C13 22 16 26 16 26M16 6C16 6 19 10 19 16C19 22 16 26 16 26M16 6V26M10 16H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span>Riches Corp</span>
+            </a>
+            
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#packages" class="nav-link">Packages</a>
+                <a href="#how" class="nav-link">How It Works</a>
+                <a href="#testimonials" class="nav-link">Reviews</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="1.5"/>
+                        <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 15.5L14 14M6 6L4.5 4.5M15.5 4.5L14 6M6 14L4.5 15.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M17 10.5C16.2 14.5 12.5 17 8.5 17C4.5 17 1 13.5 1 9.5C1 5.5 3.5 1.8 7.5 1C6.5 2.5 6 4.5 6 6.5C6 11 9.5 14.5 14 14.5C15.5 14.5 17 14 18 13C17.5 11.5 17 10.5 17 10.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <a href="login.html" class="btn-nav-secondary">Log In</a>
+                <a href="signup.html" class="btn-nav-primary">Get Started</a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#packages" class="mobile-link">Packages</a>
+            <a href="#how" class="mobile-link">How It Works</a>
+            <a href="#testimonials" class="mobile-link">Reviews</a>
+            <div class="mobile-menu-actions">
+                <a href="login.html" class="btn-mobile-secondary">Log In</a>
+                <a href="signup.html" class="btn-mobile-primary">Get Started</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- HERO SECTION (iOS Inspired) -->
+    <!-- ============================================ -->
+    <section class="hero" id="home">
+        <!-- Animated Background -->
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+            <canvas id="particles"></canvas>
+        </div>
+
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Announcement Badge -->
+                <div class="announcement-badge">
+                    <span class="badge-dot"></span>
+                    <span>New users get ₦500 free investment</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+
+                <!-- Main Headline -->
+                <h1 class="hero-title">
+                    Invest Small,<br>
+                    <span class="gradient-text">Earn Big</span> with Crypto
+                </h1>
+
+                <p class="hero-description">
+                    Join 10,000+ Nigerians earning passive income through secure cryptocurrency investments. Start with as low as ₦5,000 and watch your money grow.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-cta">
+                    <a href="signup.html" class="btn-hero-primary">
+                        <span>Start Investing</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7 13L13 7M13 7H7M13 7V13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#packages" class="btn-hero-secondary">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4L10 16M10 16L6 12M10 16L14 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>View Packages</span>
+                    </a>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="trust-bar">
+                    <div class="trust-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="#FFD700"/>
+                        </svg>
+                        <div>
+                            <p class="trust-value">4.9/5</p>
+                            <p class="trust-label">Rating</p>
+                        </div>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 15C15.866 15 19 11.866 19 8C19 4.13401 15.866 1 12 1C8.13401 1 5 4.13401 5 8C5 11.866 8.13401 15 12 15Z" stroke="#00D9FF" stroke-width="2"/>
+                            <path d="M4 23C4 18.5817 7.58172 15 12 15C16.4183 15 20 18.5817 20 23" stroke="#00D9FF" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <div>
+                            <p class="trust-value">10K+</p>
+                            <p class="trust-label">Users</p>
+                        </div>
+                    </div>
+                    <div class="trust-divider"></div>
+                    <div class="trust-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L3 7V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V7L12 2Z" stroke="#00FF88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 12L11 14L15 10" stroke="#00FF88" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <div>
+                            <p class="trust-value">100%</p>
+                            <p class="trust-label">Secure</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crypto Cards (Floating Animation) -->
+            <div class="crypto-showcase">
+                <div class="crypto-card-3d floating" style="--delay: 0s">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <svg class="crypto-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" fill="url(#btcGradient)"/>
+                            <path d="M24 8C24 8 18 14 18 24C18 34 24 40 24 40M24 8C24 8 30 14 30 24C30 34 24 40 24 40M24 8V40M14 24H34" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            <defs>
+                                <linearGradient id="btcGradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#F7931A"/>
+                                    <stop offset="100%" stop-color="#FFA500"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="card-info">
+                            <p class="crypto-name">Bitcoin</p>
+                            <p class="crypto-return">+30% Returns</p>
+                        </div>
+                        <div class="card-badge">7 Days</div>
+                    </div>
+                </div>
+
+                <div class="crypto-card-3d floating" style="--delay: 0.2s">
+                    <div class="card-glow eth"></div>
+                    <div class="card-content">
+                        <svg class="crypto-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" fill="url(#ethGradient)"/>
+                            <path d="M24 6L24 22L36 26L24 6Z" fill="white" fill-opacity="0.8"/>
+                            <path d="M24 6L12 26L24 22L24 6Z" fill="white" fill-opacity="0.6"/>
+                            <path d="M24 32L36 26L24 42L24 32Z" fill="white" fill-opacity="0.8"/>
+                            <path d="M24 42L12 26L24 32L24 42Z" fill="white" fill-opacity="0.6"/>
+                            <defs>
+                                <linearGradient id="ethGradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#627EEA"/>
+                                    <stop offset="100%" stop-color="#8A9FFF"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="card-info">
+                            <p class="crypto-name">Ethereum</p>
+                            <p class="crypto-return">+40% Returns</p>
+                        </div>
+                        <div class="card-badge eth-badge">15 Days</div>
+                    </div>
+                </div>
+
+                <div class="crypto-card-3d floating" style="--delay: 0.4s">
+                    <div class="card-glow sol"></div>
+                    <div class="card-content">
+                        <svg class="crypto-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="22" fill="url(#solGradient)"/>
+                            <path d="M14 30L20 24L14 18M20 24L26 30M26 30L32 24M26 30L32 36" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs>
+                                <linearGradient id="solGradient" x1="0" y1="0" x2="48" y2="48">
+                                    <stop offset="0%" stop-color="#00D9FF"/>
+                                    <stop offset="50%" stop-color="#9945FF"/>
+                                    <stop offset="100%" stop-color="#14F195"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="card-info">
+                            <p class="crypto-name">Solana</p>
+                            <p class="crypto-return">+50% Returns</p>
+                        </div>
+                        <div class="card-badge sol-badge">21 Days</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- STATS COUNTER SECTION -->
+    <!-- ============================================ -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card glass">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4C16 4 12 8 12 16C12 24 16 28 16 28M16 4C16 4 20 8 20 16C20 24 16 28 16 28M16 4V28M8 16H24" stroke="url(#statGradient1)" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="statGradient1" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#FFD700"/>
+                                <stop offset="100%" stop-color="#FFA500"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="stat-number" data-target="2000000000">0</h3>
+                <p class="stat-label">Total Invested</p>
+                <div class="stat-badge">₦2B+</div>
+            </div>
+
+            <div class="stat-card glass">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <circle cx="16" cy="12" r="5" stroke="url(#statGradient2)" stroke-width="2"/>
+                        <path d="M6 28C6 22.4772 10.4772 18 16 18C21.5228 18 26 22.4772 26 28" stroke="url(#statGradient2)" stroke-width="2" stroke-linecap="round"/>
+                        <defs>
+                            <linearGradient id="statGradient2" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#00D9FF"/>
+                                <stop offset="100%" stop-color="#0099FF"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="stat-number" data-target="10000">0</h3>
+                <p class="stat-label">Active Investors</p>
+                <div class="stat-badge users">10K+</div>
+            </div>
+
+            <div class="stat-card glass">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4L4 10V15C4 21.6274 8.69 27.8093 16 30C23.31 27.8093 28 21.6274 28 15V10L16 4Z" stroke="url(#statGradient3)" stroke-width="2"/>
+                        <path d="M12 16L14.5 18.5L20 13" stroke="url(#statGradient3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <defs>
+                            <linearGradient id="statGradient3" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#00FF88"/>
+                                <stop offset="100%" stop-color="#00CC66"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="stat-number" data-target="500000000">0</h3>
+                <p class="stat-label">Withdrawn</p>
+                <div class="stat-badge success">₦500M+</div>
+            </div>
+
+            <div class="stat-card glass">
+                <div class="stat-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M16 4L18.472 11.056L26 13.528L18.472 16L16 23.056L13.528 16L6 13.528L13.528 11.056L16 4Z" fill="url(#statGradient4)"/>
+                        <defs>
+                            <linearGradient id="statGradient4" x1="0" y1="0" x2="32" y2="32">
+                                <stop offset="0%" stop-color="#FFD700"/>
+                                <stop offset="100%" stop-color="#FFC700"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <h3 class="stat-number" data-target="99">0</h3>
+                <p class="stat-label">Success Rate</p>
+                <div class="stat-badge rating">99%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continue with Packages, How It Works, Testimonials, Footer... -->
+    <!-- I'll send those in PART 2 to keep this manageable -->
+
+    <script src="js/main.js"></script>
+</body>
+</html>
